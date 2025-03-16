@@ -9,7 +9,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/auth/register", { email, password });
+      await axios.post("https://backend-uok7.onrender.com/api/auth/register", { email, password });
       setMessage("User registered successfully! You can now login.");
     } catch (err) {
       setMessage("User already exists.");
