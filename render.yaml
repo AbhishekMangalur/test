@@ -1,0 +1,16 @@
+services:
+  - name: chat-backend
+    type: web
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    repo: https://github.com/your-username/chat-backend
+    autoDeploy: true
+
+  - name: chat-frontend
+    type: web
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    repo: https://github.com/your-username/chat-frontend
+    autoDeploy: true
