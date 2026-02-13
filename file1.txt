@@ -1,7 +1,1 @@
-Hello Git
-hlo
-<<<<<<< HEAD
-Main branch line
-=======
-Feature branch line
->>>>>>> feature
+hi
