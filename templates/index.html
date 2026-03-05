@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Voting App</title>
+</head>
+
+<body>
+
+<h1>Vote Your Favorite Language</h1>
+
+<form method="post">
+
+<input type="radio" name="language" value="Python">Python<br>
+<input type="radio" name="language" value="Java">Java<br>
+<input type="radio" name="language" value="JavaScript">JavaScript<br><br>
+
+<button type="submit">Vote</button>
+
+</form>
+
+<h2>Results</h2>
+
+<ul>
+<li>Python : {{votes["Python"]}}</li>
+<li>Java : {{votes["Java"]}}</li>
+<li>JavaScript : {{votes["JavaScript"]}}</li>
+</ul>
+
+</body>
+</html>
